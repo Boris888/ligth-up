@@ -1,0 +1,61 @@
+<!-- <h1>Courses#index</h1>
+<p>Find me in app/views/courses/index.html.erb</p> -->
+
+<h2 class="text-center">Cours disponible</h2>
+<br><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-offset-3 col-xs-6 ">
+      <% @courses.each do |course| %>
+        <div class="row">
+          <div class="col-md-10">
+
+            <h3 class="yummmy"><%= link_to course.name, course_path(course) %></h3>
+
+
+            <p><%= course.description %> <h3><%= course.price %> €</h3></p>
+            <div class="caption text-center">
+
+            </div>
+          </div>
+        </div>
+<% end %>
+
+<div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-12">
+            <ul class="list-inline social">
+              <li>
+                  <div class="col-xs-2">
+       <%= link_to "http://facebook.com" do %>
+       <%= image_tag "face_chalk.jpg", width:"75px", id: "logo" %>
+       <% end %>
+              </li>
+              <li>
+                 <div class="col-xs-2">
+       <%= link_to "http://facebook.com" do %>
+       <%= image_tag "twitt_chalk.jpg", width:"75px", id: "logo" %>
+       <% end %>
+              <li>
+                <div class="col-xs-2">
+       <%= link_to "http://facebook.com" do %>
+       <%= image_tag "in_chalk.jpg", width:"75px", id: "logo" %>
+       <% end %>
+              </li>
+              <li>
+                <div class="col-xs-2">
+       <%= link_to "http://facebook.com" do %>
+       <%= image_tag "you_tube_chalk.jpg", width:"75px", id: "logo" %>
+       <% end %>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<p class="text-center"><%= link_to "À propos", about_show_path %></p>
+
+

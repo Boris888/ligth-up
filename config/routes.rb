@@ -1,6 +1,31 @@
 Rails.application.routes.draw do
+
+  get 'tchats/index' => 'tchats#index'
+
+  # get 'tchats/show'
+
+  get 'about/show' => 'about#show'
+
+  # resources :tchats
+
+  # get 'courses/index'
+
+  # get 'courses/show'
+
+  # get 'courses/new'
+
+  # get 'courses/create'
+
+  # get 'courses/edit'
+
+  # get 'courses/update'
+
+  # get 'courses/destroy'
+
+resources :courses
+
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
-  root to: 'pages#home'
+  root to: 'courses#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
