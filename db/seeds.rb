@@ -7,3 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
+order1 = Order.create(price: 7)
+Order.create(price: 8)
+Order.create(price: 15)
