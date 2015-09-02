@@ -1,17 +1,19 @@
 Rails.application.routes.draw do
-  get 'courses/index'
+  # get 'courses/index'
 
-  get 'courses/show'
+  # get 'courses/show'
 
-  get 'courses/new'
+  # get 'courses/new'
 
-  get 'courses/create'
+  # get 'courses/create'
 
-  get 'courses/edit'
+  # get 'courses/edit'
 
-  get 'courses/update'
+  # get 'courses/update'
 
-  get 'courses/destroy'
+  # get 'courses/destroy'
+
+resources :courses
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   root to: 'pages#home'
