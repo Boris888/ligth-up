@@ -17,14 +17,13 @@
           <% end %>
         </ul>
       </p>
-      <h1><%= link_to "Acheter", orders_new_path %></h1>
 
 
 <!-- <div class="container">
   <div class="row">
     <div class="col-xs-12  col-sm-6 col-sm-offset-3"> -->
 <%= simple_form_for [@course, @chapter] do |f| %>
-<%= f.input :name %>
+<%= f.input :name, placeholder: "Entrer le nom du chapitre" %>
 <%= f.button :submit %>
 
 <% end %>
@@ -33,6 +32,7 @@
 </div>
  -->
 
+      <h1><%= link_to "Acheter", orders_new_path %></h1>
 </div>
 
 <div ><h2><%= @course.price %> €</h2></div>

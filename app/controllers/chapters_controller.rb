@@ -10,6 +10,13 @@ class ChaptersController < ApplicationController
   end
 
   def create
+    @chapter = Chapter.new(chapter_params)
+    @chapter.course = @course
+    if @chapter.save
+      redirect_to course_path(@course)
+    else
+      render :show
+    end
   end
 
   def edit
