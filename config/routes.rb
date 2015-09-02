@@ -22,7 +22,10 @@ Rails.application.routes.draw do
 
   # get 'courses/destroy'
 
-resources :courses
+resources :courses do
+ resources :chapters, only: [:new, :create]
+  end
+
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   root to: 'courses#index'
