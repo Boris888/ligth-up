@@ -7,7 +7,7 @@
     <div class="col-xs-offset-3 col-xs-6 ">
   <h2><%= @course.name%></h2>
   <p><%= @course.description%></p>
-      <h2>Ingrédients</h2>
+      <h2>Chapters</h2>
       <p>
         <ul class="list-unstyled">
           <% @course.chapters.each do |chapter|%>
@@ -17,7 +17,7 @@
           <% end %>
         </ul>
       </p>
-      <h1><%= link_to "Commander", new_order_path %></h1>
+      <h1><%= link_to "Acheter", orders_new_path %></h1>
 
 
 </div>
