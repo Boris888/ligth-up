@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about/show'
+
   # get 'courses/index'
 
   # get 'courses/show'

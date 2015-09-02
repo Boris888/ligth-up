@@ -1,7 +1,7 @@
 <h1>Courses#index</h1>
 <p>Find me in app/views/courses/index.html.erb</p>
 
-<h2 class="text-center">MENU DU JOUR</h2>
+<h2 class="text-center">Cours disponible</h2>
 <br><br>
   <div class="container-fluid">
     <div class="row">
@@ -13,7 +13,7 @@
             <h3 class="yummmy"><%= link_to course.name, course_path(course) %></h3>
 
 
-            <p><%= course.description %> <h3><%= course.price_per_portion%> €</h3></p>
+            <p><%= course.description %> <h3><%= course.price %> €</h3></p>
             <div class="caption text-center">
 
             </div>

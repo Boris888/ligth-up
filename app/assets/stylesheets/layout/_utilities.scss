@@ -23,3 +23,57 @@
 .bg-facebook {
   background: #3b5998;
 }
+
+
+body {
+  background-image: image-url('blackboard.jpg');
+  background-size: cover;
+  color: white;
+}
+
+// .row-bg {
+//   background: $card-bg;;
+// }
+
+// .rectanglechalk {
+//   background: transparent;
+//   //background-image: image-url('chalk_rectangleshape_150-70.png');
+//   // background-size: auto;
+//   background-repeat: no-repeat;
+// }
+
+.btn{
+  color: white;
+  display: center-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: none;
+  touch-action: none;
+    cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-default {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 20px
+}
+
+.btn:hover {
+    color: gray;
+    background: none;
+    border-color: none;
+  }

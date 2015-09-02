@@ -20,7 +20,7 @@ class CoursesController < ApplicationController
 
   def create
     @course = Course.create(course_params)
-    redirect_to edit_course_path
+    redirect_to courses_path
     # @course.user_id = current_user.id
     # if @course.save
     # @ingredient = Ingredient.new(name: ingredient_params[:name], course_id: course.last.id)
