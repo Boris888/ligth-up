@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  get 'about/show'
+
+  get 'tchats/index' => 'tchats#index'
+
+  # get 'tchats/show'
+
+  # get 'about/show'
+
+  # resources :tchats
 
   # get 'courses/index'
 
