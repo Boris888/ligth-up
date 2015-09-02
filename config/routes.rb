@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # get 'tchats/show'
 
-  # get 'about/show'
+  get 'about/show' => 'about#show'
 
   # resources :tchats
 
