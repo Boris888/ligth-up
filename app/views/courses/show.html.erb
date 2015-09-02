@@ -1,2 +1,29 @@
 <h1>Courses#show</h1>
 <p>Find me in app/views/courses/show.html.erb</p>
+
+<div class="container text-center">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-offset-3 col-xs-6 ">
+  <h2><%= @course.name%></h2>
+  <p><%= @course.description%></p>
+      <h2>Ingrédients</h2>
+      <p>
+        <ul class="list-unstyled">
+          <% @course.chapters.each do |chapter|%>
+            <li>
+              <%= chapter.name %>
+            </li>
+          <% end %>
+        </ul>
+      </p>
+      <h1><%= link_to "Commander", new_order_path %></h1>
+
+
+</div>
+
+
+<div ><h2><%= @course.price %> €</h2></div>
+
+
+

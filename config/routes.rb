@@ -1,5 +1,21 @@
 Rails.application.routes.draw do
 
+  # get 'chapters/index'
+
+  # get 'chapters/show'
+
+  # get 'chapters/new'
+
+  # get 'chapters/create'
+
+  # get 'chapters/edit'
+
+  # get 'chapters/update'
+
+  # get 'chapters/destroy'
+
+
+
   get 'tchats/index' => 'tchats#index'
 
   # get 'tchats/show'
@@ -23,7 +39,7 @@ Rails.application.routes.draw do
   # get 'courses/destroy'
 
 resources :courses do
- resources :chapters, only: [:new, :create]
+ resources :chapters, only: [:create]
   end
 
 
