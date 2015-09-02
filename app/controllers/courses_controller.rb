@@ -10,10 +10,13 @@ class CoursesController < ApplicationController
 
   def show
     # @ingredient = Ingredient.new
+    @chapter = Chapter.new
+
   end
 
   def new
     # NEXT WEEK
+    @chapter = Chapter.new
     @course = Course.new
     # @ingredient = Ingredient.new
   end

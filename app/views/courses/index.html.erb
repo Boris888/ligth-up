@@ -3,7 +3,7 @@
 
 <h2 class="text-center">Cours disponible</h2>
 <br><br>
-  <div class="container-fluid">
+<div class="container-fluid">
     <div class="row">
       <div class="col-xs-offset-3 col-xs-6 ">
       <% @courses.each do |course| %>
@@ -20,6 +20,25 @@
           </div>
         </div>
 <% end %>
+
+<p>tessssssssssssssssssssst</p>
+
+<div class="container">
+  <div class="row">
+    <% @courses.each do |course| %>
+    <div class="col-xs-12 col-sm-4">
+      <%= render "card", course: course %>
+        </div>
+        <%course.name%>
+        <%course.name%>
+        <%course.name%>
+        <% end %>
+      </div>
+    </div>
+
+
+<p>tesssssssssssssssssssssssssssssssssssssss</p>
+
 
 <div id="footer">
       <div class="container">

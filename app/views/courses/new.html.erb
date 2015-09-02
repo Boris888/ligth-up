@@ -8,8 +8,8 @@
       <h1>Proposer un cours</h1>
             <%= simple_form_for(@course) do |f| %>
               <%= f.error_notification %>
-              <%= f.input :name, label: 'Le titre de votre cours', placeholder: "Envoyez du rêve !" %>
-              <%= f.input :description, :as => :string, label: 'Description', placeholder: "Sur quel sujet", input_html: { rows: "2" } %>
+              <%= f.input :name, label: 'Le titre de votre cours', placeholder: "Titre " %>
+              <%= f.input :description, :as => :string, label: 'Description', placeholder: "Sujet", input_html: { rows: "2" } %>
 
 
 

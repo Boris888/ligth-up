@@ -1,2 +1,41 @@
 <h1>Courses#show</h1>
 <p>Find me in app/views/courses/show.html.erb</p>
+
+<div class="container text-center">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-offset-3 col-xs-6 ">
+  <h2><%= @course.name%></h2>
+  <p><%= @course.description%></p>
+      <h2>Chapters</h2>
+      <p>
+        <ul class="list-unstyled">
+          <% @course.chapters.each do |chapter|%>
+            <li>
+              <%= chapter.name %>
+            </li>
+          <% end %>
+        </ul>
+      </p>
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-xs-12  col-sm-6 col-sm-offset-3"> -->
+<%= simple_form_for [@course, @chapter] do |f| %>
+<%= f.input :name, placeholder: "Entrer le nom du chapitre" %>
+<%= f.button :submit %>
+
+<% end %>
+<!--     </div>
+  </div>
+</div>
+ -->
+
+      <h1><%= link_to "Acheter", orders_new_path %></h1>
+</div>
+
+<div ><h2><%= @course.price %> €</h2></div>
+
+
+

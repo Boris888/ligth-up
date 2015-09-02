@@ -1,5 +1,35 @@
 Rails.application.routes.draw do
 
+  get 'orders/index'
+
+  get 'orders/show'
+
+  get 'orders/new'
+
+  get 'orders/create'
+
+  get 'orders/edit'
+
+  get 'orders/update'
+
+  get 'orders/destroy'
+
+  # get 'chapters/index'
+
+  # get 'chapters/show'
+
+  # get 'chapters/new'
+
+  # get 'chapters/create'
+
+  # get 'chapters/edit'
+
+  # get 'chapters/update'
+
+  # get 'chapters/destroy'
+
+
+
   get 'tchats/index' => 'tchats#index'
 
   # get 'tchats/show'
@@ -22,7 +52,10 @@ Rails.application.routes.draw do
 
   # get 'courses/destroy'
 
-resources :courses
+resources :courses do
+ resources :chapters, only: [:create]
+  end
+
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   root to: 'courses#index'
