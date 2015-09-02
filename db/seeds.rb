@@ -26,7 +26,7 @@
 # Order.create(price: 12 )
 
 
-courses_attributes.each { |params| Course.create!(params)}
+# courses_attributes.each { |params| Course.create!(params)}
 
 namba = Chapter.new(name: "tr 777")
 kendo = Course.first
