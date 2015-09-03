@@ -15,7 +15,7 @@ class ChaptersController < ApplicationController
     if @chapter.save
       redirect_to course_path(@course)
     else
-      render :show
+      render "courses/show"
     end
   end
 
