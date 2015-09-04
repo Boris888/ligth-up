@@ -21,16 +21,12 @@
 
               <%= form_for(@course, html: { multipart: true }) do |f| %>
                   <!-- ... -->
-                  <%= f.label :picture %>
+                  <%= f.label :video %>
                   <%= f.file_field :picture %>
                   <!-- ... -->
                 <% end %>
 
-                <%= simple_form_for(@course) do |f| %>
-                  <!-- ... -->
-                  <%= f.input :picture %>
-                  <!-- ... -->
-                <% end %>
+
 
 
     </div>
