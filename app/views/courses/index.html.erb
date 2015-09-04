@@ -20,6 +20,8 @@
           </div>
         </div>
 <% end %>
+</div>
+</div>
 
 <p>tessssssssssssssssssssst</p>
 
@@ -36,11 +38,54 @@
       </div>
     </div>
 
+<br>
+<div class="ui card">
+  <div class="ui slide masked reveal image">
+    <%= link_to image_tag('crudité.jpg'), courses_path, width:"10px", class: "visible content"%>
+    <%= link_to image_tag('lucien.jpg'), courses_path, width:"10px", class: "hidden content"%>
+   <!--  <img src="crudité.jpg" class="visible content">
+    <img src="crudité.jpg" class="hidden content"> -->
+  </div>
+  <div class="content">
+    <a class="header">Team Fu &amp; Hess</a>
+    <div class="meta">
+      <span class="date">Create in Sep 2014</span>
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="users icon"></i>
+      2 Members
+    </a>
+  </div>
+</div>
 
-<p>tesssssssssssssssssssssssssssssssssssssss</p>
+
+<div class="ui move reveal">
+  <div class="visible content">
+    <img src="lucien.png" class="ui small image">
+  </div>
+  <div class="hidden content">
+    <img src="burritos.jpg" class="ui small image">
+  </div>
+</div>
 
 
-<div id="footer">
+<!-- ***********************
+***********************
+***********************
+***********************           Séparation avec le Footer
+***********************
+***********************
+***********************
+***********************
+*********************** -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-offset-3 col-xs-6 ">
+    <div id="footer">
       <div class="container">
         <div class="row">
           <div class="col-xs-6 col-sm-12">
@@ -75,6 +120,9 @@
       </div>
     </div>
 
+  </div>
+ </div>
+</div>
+
+
 <p class="text-center"><%= link_to "À propos", about_show_path %></p>
-
-

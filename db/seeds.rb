@@ -7,9 +7,12 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Course.create(name:"théologie globale", user_id: User.first, description:"super", price: 3)
-Course.create(name:"maitrisé super scraper", user_id: User.first, description:"génial", price: 2)
-Course.create(name:"réalisez un smoothie parfait", user_id: User.first, description:"fantastique", price: 2)
+Course.create(name:"Le parcours de l'auto-entrepreneur", user_id: User.first, description:"Toutes les démarches pour devenir auto-entrepreneur, démysthifié.", price: 3)
+Course.create(name:"L'alimentation saine", user_id: User.first, description:"Les meilleurs bénéfices sur notre santé, avec ce que la nature à prévu pour nous", price: 2)
+Course.create(name:"réalisez un smoothie parfait", user_id: User.first, description:"recette et alternative", price: 2)
+Course.create(name:"Comprendre la faim dans le monde", user_id: User.first, description:"Comprendre pourquoi les pays ayant le plus de paysans, souffre le plus de la faim", price: 3)
+Course.create(name:"Augmentez votre vitesse de frappe au clavier", user_id: User.first, description:"soyer encore plus productif en apprenant à taper au clavier bépo", price: 2)
+Course.create(name:"Similitude entre bouddhisme et christianisme", user_id: User.first, description:"Sur quelle vérité sont ils en accords ?", price: 2)
 
 
 
