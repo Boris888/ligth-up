@@ -3,20 +3,19 @@
 
 
     <%= link_to tchats_index_path do %>
-      <%= image_tag "tchat_logo3.png", width:"90px", id: "logo" %>
+      <%= image_tag "tchat_logo4.png", width:"90px", id: "logo" %>
     <% end %>
 <!-- <div class="col-mod-6"></div> -->
 
   <div class="col-md-2"></div>
-  <h1 class="yummmy col-xs-6 text-center typo_yummmy_home"><%= link_to "Ligth-up", root_path %></h1>
+  <h1 class="l-u col-xs-6 text-center"><%= link_to "Ligth-up", root_path %></h1>
 
   <form action="" class="navbar-wagon-search">
-      <input type="text" class="navbar-wagon-search-input" placeholder="Search for featured stuff">
-      <button type="submit" class="navbar-wagon-search-btn">
+     <!--  <input type="text" class="navbar-wagon-search-input" placeholder="Search for featured stuff"> -->
+    <!--   <button type="submit" class="navbar-wagon-search-btn">
         <i class="fa fa-search"></i>
-      </button>
+      </button> -->
   </form>
-
 
     <% if user_signed_in? %>
       <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link hidden-xs" do %>
@@ -53,6 +52,6 @@
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
     <hr>
-    <%= link_to t(".top_call_to_action", default: "Ajouter un cours"), new_course_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
+    <%= link_to t(".top_call_to_action", default: "Ajouter un cours"), new_course_path, class: "navbar-wagon-item navbar-wagon-button btn glyphicon glyphicon-flash" %>
   </div>
 </nav>

@@ -18,6 +18,17 @@
                 <%= f.button :submit, label: "Ajouter votre plat", class: "btn btn-primary" %>
 <!--               </div> -->
       <% end %>
+
+              <%= form_for(@course, html: { multipart: true }) do |f| %>
+                  <!-- ... -->
+                  <%= f.label :video %>
+                  <%= f.file_field :picture %>
+                  <!-- ... -->
+                <% end %>
+
+
+
+
     </div>
   </div>
 </div>
