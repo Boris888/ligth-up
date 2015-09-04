@@ -12,7 +12,7 @@ Course.create(name:"L'alimentation saine", user_id: User.first, description:"Les
 Course.create(name:"réalisez un smoothie parfait", user_id: User.first, description:"recette et alternative", price: 2)
 Course.create(name:"Comprendre la faim dans le monde", user_id: User.first, description:"Comprendre pourquoi les pays ayant le plus de paysans, souffre le plus de la faim", price: 3)
 Course.create(name:"Augmentez votre vitesse de frappe au clavier", user_id: User.first, description:"soyer encore plus productif en apprenant à taper au clavier bépo", price: 2)
-Course.create(name:"Similitude entre bouddhisme et christianisme", user_id: User.first, description:"Sur quelle vérité sont ils en accords ?", price: 2)
+Course.create(name:"Similitude entre bouddhisme et christianisme", user_id: User.first, description:"Sur quelle vérité sont-ils en accords ?", price: 2)
 
 
 
