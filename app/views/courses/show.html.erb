@@ -1,13 +1,16 @@
-<h1>Courses#show</h1>
-<p>Find me in app/views/courses/show.html.erb</p>
-
+<!-- <h1>Courses#show</h1>
+<p>Find me in app/views/courses/show.html.erb</p> -->
+<div id="main">
 <div class="container text-center">
   <div class="container-fluid">
   <div class="row">
     <div class="col-xs-offset-3 col-xs-6 ">
-  <h2><%= @course.name%></h2>
-  <p><%= @course.description%></p>
-      <h2>Chapters</h2>
+  <h1><%= @course.name%></h1>
+  <br>
+  <h4><%= @course.description%></h4>
+
+
+ <!--      <h2>Chapters</h2>
       <p>
         <ul class="list-unstyled">
           <% @course.chapters.each do |chapter|%>
@@ -18,25 +21,146 @@
         </ul>
       </p>
 
+ -->
 
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-xs-12  col-sm-6 col-sm-offset-3"> -->
+<!--
 <%= simple_form_for [@course, @chapter] do |f| %>
 <%= f.input :name, placeholder: "Entrer le nom du chapitre" %>
 <%= f.button :submit %>
-
 <% end %>
-<!--     </div>
-  </div>
-</div>
- -->
 
       <h1><%= link_to "Acheter", orders_new_path %></h1>
 </div>
 
+
 <div ><h2><%= @course.price %> €</h2></div>
+ -->
 
-<%= image_tag @course.picture.url(:medium) %>
 
 
+
+<!-- <h1>About#show</h1>
+<p>Find me in app/views/about/show.html.erb</p> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.scrollTo').click( function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 750; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });
+</script>
+
+
+<!--
+
+
+<ul class="menu">
+  <li><a class="scrollTo" href="#page-1">Page 1</a></li>
+  <li><a class="scrollTo" href="#page-2">Page 2</a></li>
+  <li><a class="scrollTo" href="#page-3">Page 3</a></li>
+  <li><a class="scrollTo" href="#page-4">Page 4</a></li>
+</ul>
+
+<div id="page-1">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti libero maxime a illo sunt architecto rem, molestiae excepturi aperiam eum asperiores illum, enim omnis quibusdam nihil velit ipsum culpa dolores.
+ -->
+  <!-- Contenu Page 1 -->
+
+
+<br> <br> <br>
+
+  <h2>Êtes-vous au chomage ? </h2>
+  <a class="scrollTo" href="#page-3">OUI</a>
+  <a class="scrollTo" href="#page-1">NON</a>
+
+
+
+</div><!-- /page-1 -->
+
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+<div id="page-1">
+   <%= link_to image_tag('crudité.jpg'), "http://google.com", width:"10px" %>
+<br>
+<a class="scrollTo" href="#page-1">Page 1</a>
+<a class="scrollTo" href="#page-2">Page 2</a>
+<a class="scrollTo" href="#page-3">Page 3</a>
+<a class="scrollTo" href="#page-4">Page 4</a>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+<div id="page-2">
+<h3>Concernant la banque</h3>
+
+<br>
+<!--   <a class="scrollTo" href="#page-1">Page 1</a>
+<a class="scrollTo" href="#page-2">Page 2</a>
+<a class="scrollTo" href="#page-3">Page 3</a>
+<a class="scrollTo" href="#page-4">Page 4</a>
+ -->
+  <!-- Contenu Page 2 -->
+</div><!-- /page-2 -->
+   <%= link_to image_tag('banques2.jpg'), "http://google.com", width:"10px", :target => "_blank" %>
+
+   <br><br><br>
+<h2>Autre question ? </h2>
+  <a class="scrollTo" href="#page-4">OUI</a>
+  <a class="scrollTo" href="#page-2">NON</a>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+<div id="page-3">
+  <h3>Les démarches à effectuer au pôle emploi</h3>
+
+  <br>
+   <%= link_to image_tag('emploi3.jpg'), "http://google.com", width:"10px", :target => "_blank" %>
+<!--   <a class="scrollTo" href="#page-1">Page 1</a>
+<a class="scrollTo" href="#page-2">Page 2</a>
+<a class="scrollTo" href="#page-3">Page 3</a>
+<a class="scrollTo" href="#page-4">Page 4</a>
+  <!-- Contenu Page 2 -->
+  <br><br>
+
+  <h2>Autre question ? </h2>
+  <a class="scrollTo" href="#page-4">OUI</a>
+  <a class="scrollTo" href="#page-2">NON</a>
+
+</div><!-- /page-2 -->
+
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+<div id="page-4">
+<h3>Obtenez le statut d'auto-entrepreneur en moins de 48 heures</h3>
+      <!-- image clickable -->
+
+      <br> <br> <br>
+
+   <%= link_to image_tag('auto2.jpg'), "http://google.com", width:"10px", :target => "_blank" %>
+  <br> <br> <br> <br>
+  <a class="scrollTo" href="#main">Main</a>
+<!-- <a class="scrollTo" href="#page-2">Page 2</a>
+<a class="scrollTo" href="#page-3">Page 3</a>
+<a class="scrollTo" href="#page-4">Page 4</a>
+  <!-- Contenu Page 2 -->
+</div><!-- /page-2 -->

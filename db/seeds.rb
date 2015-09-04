@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Course.create(name:"Le parcours de l'auto-entrepreneur", user_id: User.first, description:"Toutes les démarches pour devenir auto-entrepreneur, démysthifié.", price: 3)
+Course.create(name:"Le parcours de l'auto-entrepreneur", user_id: User.first, description:"Toutes les démarches pour devenir auto-entrepreneur, démysthifié.", price: 3, picture: "https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/11036599_1413471848961135_5856528738371133638_o.jpg")
 Course.create(name:"L'alimentation saine", user_id: User.first, description:"Les meilleurs bénéfices sur notre santé, avec ce que la nature à prévu pour nous", price: 2)
 Course.create(name:"réalisez un smoothie parfait", user_id: User.first, description:"recette et alternative", price: 2)
 Course.create(name:"Comprendre la faim dans le monde", user_id: User.first, description:"Comprendre pourquoi les pays ayant le plus de paysans, souffre le plus de la faim", price: 3)
